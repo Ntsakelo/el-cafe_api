@@ -1,14 +1,16 @@
 {
     "compilerOptions": {
         "module": "NodeNext",
+        "allowJs": true,
         "moduleResolution": "NodeNext",
         "baseUrl": "src",
         "outDir": "dist",
         "sourceMap": true,
-        "noImplicitAny": true
+        "noImplicitAny": true,
+        "rootDir":"src"
     },
     "exclude": [
         "node_modules"
     ],
-    "include": ["src/**/*"],
+    "include": ["src/**/*"]
 }
