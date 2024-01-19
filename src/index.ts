@@ -19,8 +19,10 @@ app.use(compression());
 
 const server = http.createServer(app);
 
-server.listen(5001, () => {
-    console.log('app running on http://localhost:5001');
+const PORT = process.env.PORT || 5001;
+
+server.listen(PORT, () => {
+    console.log('app running on http://localhost:'+PORT);
 })
 
 app.use('/',router())
