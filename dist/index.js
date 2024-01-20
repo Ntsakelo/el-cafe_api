@@ -19,8 +19,9 @@ app.use(body_parser_1.default.json());
 app.use((0, cookie_parser_1.default)());
 app.use((0, compression_1.default)());
 const server = http_1.default.createServer(app);
-server.listen(5001, () => {
-    console.log('app running on http://localhost:5001');
+const PORT = process.env.PORT || 5001;
+server.listen(PORT, () => {
+    console.log('app running on http://localhost:' + PORT);
 });
 app.use('/', (0, index_1.default)());
 //# sourceMappingURL=index.js.map
