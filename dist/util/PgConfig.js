@@ -7,5 +7,5 @@ exports.db = void 0;
 require("dotenv/config");
 const pg_promise_1 = __importDefault(require("pg-promise"));
 const pgp = (0, pg_promise_1.default)();
-exports.db = pgp({ connectionString: process.env.DATABASE_URL });
+exports.db = pgp('postgres://el_cafe_user:71K6YOAjtjPhLxDgyYcBSYwdCADpgsLX@dpg-cmlf40v109ks7391qpag-a.oregon-postgres.render.com/el_cafe?ssl=true');
 //# sourceMappingURL=PgConfig.js.map
