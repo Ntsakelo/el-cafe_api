@@ -10,7 +10,7 @@ import router from './router/index';
 const app = express();
 
 app.use(cors({
-    credentials: true,
+    credentials: false,
 }))
 
 app.use(bodyParser.json());
