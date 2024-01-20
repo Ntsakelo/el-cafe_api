@@ -4,4 +4,4 @@ import env from '../util/EnvValidation'
 
 const pgp = pgPromise();
 
-export const db = pgp({connectionString: process.env.DB_CONNECTION_STRING});
+export const db = pgp({connectionString: process.env.DATABASE_URL});
